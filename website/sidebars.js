@@ -152,6 +152,7 @@ module.exports = {
       'api/applymiddleware',
       'api/bindactioncreators',
       'api/compose',
+      'api/reducereducers',
       'api/utils',
       { type: 'link', label: 'Error Messages', href: '/errors' }
     ],

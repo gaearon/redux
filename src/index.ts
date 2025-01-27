@@ -1,6 +1,7 @@
 // functions
 import { createStore, legacy_createStore } from './createStore'
 import combineReducers from './combineReducers'
+import reduceReducers from './reduceReducers'
 import bindActionCreators from './bindActionCreators'
 import applyMiddleware from './applyMiddleware'
 import compose from './compose'
@@ -41,6 +42,7 @@ export {
   createStore,
   legacy_createStore,
   combineReducers,
+  reduceReducers,
   bindActionCreators,
   applyMiddleware,
   compose,

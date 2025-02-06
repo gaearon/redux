@@ -403,7 +403,7 @@ import { createAppAsyncThunk } from '@/app/withTypes'
 
 // highlight-next-line
 import { apiSlice } from '@/features/api/apiSlice'
-import { selectCurrentUsername } from '@/features/auth/authSlice'
+import { selectCurrentUserId } from '@/features/auth/authSlice'
 
 export interface User {
   id: string
@@ -433,9 +433,9 @@ export const selectUserById = createSelector(
 )
 
 export const selectCurrentUser = (state: RootState) => {
-  const currentUsername = selectCurrentUsername(state)
-  if (currentUsername) {
-    return selectUserById(state, currentUsername)
+  const currentUserId = selectCurrentUserId(state)
+  if (currentUserId) {
+    return selectUserById(state, currentUserId)
   }
 }
 // highlight-end

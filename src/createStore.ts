@@ -21,7 +21,7 @@ import { kindOf } from './utils/kindOf'
  *
  * @internal
  */
-type NoInfer<T> = [T][T extends any ? 0 : never]
+export type NoInfer<T> = [T][T extends any ? 0 : never]
 
 /**
  * @deprecated

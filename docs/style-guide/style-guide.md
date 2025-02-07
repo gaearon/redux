@@ -430,7 +430,7 @@ Per [Model Actions as "Events"](#model-actions-as-events-not-setters), the actua
 
 Redux reducer logic is intended to be split into many smaller reducers, each independently updating their own portion of the state tree, and all composed back together to form the root reducer function. When a given action is dispatched, it might be handled by all, some, or none of the reducers.
 
-As part of this, you are encouraged to **have many reducer functions all handle the same action separately** if possible. In practice, experience has shown that most actions are typically only handled by a single reducer function, which is fine. But, modeling actions as "events" and allowing many reducers to respond to those actions will typically allow your application's codebase to scale better, and minimize the number of times you need to dispatch multiple actions to accomplish one meaningful update.
+As part of this, you are encouraged to **[have many reducer functions all handle the same action separately](../tutorials/essentials/part-4-using-data.md#using-extrareducers-to-handle-other-actions)** if possible. In practice, experience has shown that most actions are typically only handled by a single reducer function, which is fine. But, modeling actions as "events" and allowing many reducers to respond to those actions will typically allow your application's codebase to scale better, and minimize the number of times you need to dispatch multiple actions to accomplish one meaningful update.
 
 ### Avoid Dispatching Many Actions Sequentially
 
